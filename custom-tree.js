@@ -12,9 +12,14 @@ class customTree extends HTMLElement {
       itemLink.textContent = item.title;
       itemLink.href = '#';
       listItem.appendChild(itemLink);
-
       list.appendChild(listItem);
-      console.log(item.items);
+
+      if (item.items instanceof Array){
+        var subTree = document.createElement('custom-tree');
+
+        subTree.setItems(item.items);
+        listItem.appendChild(subTree);
+      }
     }
   }
 
