@@ -1,0 +1,25 @@
+ul{
+	width: 300px;
+	list-style-type: none;
+}
+
+ul li{
+	max-width: 100px;
+	text-align: center;
+	padding: 20px 5px 0px 5px;
+}
+
+ul li a{
+	border: 1px solid #ccc;
+	text-decoration: none;
+	border-radius: 8px;
+	padding: 5px 10px;
+	font-size: 16px;
+	color: #666;
+}
+
+ul li a:hover{
+	background-color: #666;
+	color: #fff;
+	border-color: black;
+}
