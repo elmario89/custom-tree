@@ -1,25 +1,64 @@
+body > ul{
+    position: relative;
+}
+
+body > ul:before {
+    content: "";
+    display: block;
+    height: 24px;
+    width: 1px;
+    background: #ccc;
+    position: absolute;
+    top: 6px;
+    left: -9px;
+}
+
 ul{
-	width: 300px;
-	list-style-type: none;
+    width: 300px;
+    list-style-type: none;
 }
 
 ul li{
-	max-width: 100px;
-	text-align: center;
-	padding: 20px 5px 0px 5px;
+    max-width: 100px;
+    text-align: center;
+    padding: 20px 5px 0px 5px;
+    position: relative;
+}
+
+ul li li:before{
+    content: "";
+    display: block;
+    height: 24px;
+    width: 1px;
+    background: #ccc;
+    position: absolute;
+    top: 6px;
+    left: -9px;
 }
 
 ul li a{
-	border: 1px solid #ccc;
-	text-decoration: none;
-	border-radius: 8px;
-	padding: 5px 10px;
-	font-size: 16px;
-	color: #666;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 5px 10px;
+    font-size: 16px;
+    color: #666;
+    position: relative;
+}
+
+ul li a:before{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 20px;
+    background: #ccc;
+    position: absolute;
+    top: 14px;
+    left: -21px;
 }
 
 ul li a:hover{
-	background-color: #666;
-	color: #fff;
-	border-color: black;
+    background-color: #666;
+    color: #fff;
+    border-color: black;
 }
